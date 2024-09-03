@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <nav class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="#">Patients</a></li>
+        <li><a href="#">Appointments</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <header>
+        <h1>Welcome, <span id="doctor-name">[Doctor's Name]</span></h1>
+        <div class="profile-info">
+          <img src="https://via.placeholder.com/100" alt="Profile Picture" id="profile-pic">
+          <div class="profile-menu" id="profile-menu">
+            <div class="menu-header">User Profile</div>
+            <a href="#">Settings</a>
+            <p id="email-display">[user@example.com]</p>
+            <button id="sign-out">Sign Out</button>
+          </div>
+        </div>
+      </header>
+      <section class="patient-search">
+        <input type="text" id="search-bar" placeholder="Search for a patient...">
+      </section>
+      <section class="latest-appointments">
+        <h2>Latest Appointments</h2>
+        <div class="appointment-list">
+          <p>Patient 1: 10:00 AM</p>
+          <p>Patient 2: 11:00 AM</p>
+          <p>Patient 3: 12:00 PM</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

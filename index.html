@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/dashboard/css/styles.css">
+</head>
+<body>
+    <br><br><br><br><br><br>
+  <div class="box-form">
+    <div class="left">
+      <div class="overlay">
+        <h1>Welcome Back</h1>
+        <p>Login to access your account</p>
+        <span>
+          <p>Login with Google</p>
+          <button id="google-login" class="google-btn"><i class="fa fa-google" aria-hidden="true"></i> Sign in with Google</button>
+          <!-- <button id="guest-login" class="guest-btn"><i class="fa fa-user" aria-hidden="true"></i> Continue as Guest</button> -->
+        </span>
+      </div>
+    </div>
+    <div class="right">
+      <h5>Login</h5>
+      <p>Don't have an account? <a href="#">Create Your Account</a> – it takes less than a minute</p>
+      <form id="login-form">
+        <div class="inputs">
+          <input type="text" id="username" placeholder="Username">
+          <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="remember-me--forget-password">
+          <label>
+            <input type="checkbox" name="remember-me" checked/>
+            <span class="text-checkbox">Remember me</span>
+          </label>
+          <p><a href="#">Forgot password?</a></p>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js" type="module"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js" type="module"></script>
+  <script src="/dashboard/js/script.js" type="module" defer></script>
+</body>
+</html>
