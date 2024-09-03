@@ -33,7 +33,7 @@ body {
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/dashboard/login.jpg");
+  background-image: url("images/login.jpg");
   overflow: hidden;
 }
 
